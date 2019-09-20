@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/scss/style.scss"],"names":[],"mappings":"AAEA,KACE,+CAHoD,C","file":"./css/style.bundle.css","sourcesContent":["$font-stack: \"Open Sans\", \"Helvetica Neue\", sans-serif;\n\nbody {\n  font-family: $font-stack;\n}\n"],"sourceRoot":""}
