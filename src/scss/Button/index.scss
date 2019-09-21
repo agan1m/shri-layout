@@ -1,0 +1,32 @@
+.Button {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    background-repeat: no-repeat;
+
+    &_download {
+        background-image: url('../img/download.svg');
+        background-position: center;
+        padding: 18px;
+        background-size: 50%;
+    }
+
+    &_code {
+        background-color: transparent;
+        border: 0;
+        background-image: url('../img/code.svg');
+        background-position: center;
+        padding: 0 18px 18px 18px;
+        background-size: 50%;
+    }
+
+    &_burger {
+        background-image: url('../img/burger.svg');
+        background-position: 8px center;
+        padding-left: 20px;
+    }
+}

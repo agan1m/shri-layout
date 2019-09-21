@@ -2,4 +2,21 @@ $font-stack: "Open Sans", "Helvetica Neue", sans-serif;
 
 body {
   font-family: $font-stack;
+  margin: 0;
+  padding: 0;
 }
+
+@import './Header/index.scss';
+@import './Logo/index.scss';
+@import './Container/index.scss';
+@import './SubHeader/index.scss';
+@import './Text/index.scss';
+@import './Title/index.scss';
+@import './Tabs/index.scss';
+@import './ReposTable/index.scss';
+@import './Footer/index.scss';
+@import './Details/index.scss';
+@import './Button/index.scss';
+@import './History/index.scss';
+@import './Commit/index.scss';
+@import './Dropdown/index.scss';

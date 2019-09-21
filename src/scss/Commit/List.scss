@@ -1,0 +1,53 @@
+.Commit-List {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "PT Mono", "Hmonospace", sans-serif;
+    counter-reset: minus plus;
+    &-Item {
+        position: relative;
+        padding: 7px 7px 7px 112px;
+        color: #00234b;
+        font-size: 12px;
+        line-height: 20px;
+        &::before {
+            counter-increment: plus;
+            content: counter(plus);
+            position: absolute;
+            left: 35px;
+            top: 7px;
+            color: #999999;
+        }
+        &::after {
+            counter-increment: minus;
+            content: counter(minus);
+            position: absolute;
+            top: 7px;
+            left: 75px;
+            color: #999999;
+        }
+
+        &_plus {
+            background-color: #E6FFED;
+            &::after {
+                display: none;
+            }
+        }
+
+        &_minus {
+            background-color: #FFEEF0;
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .Commit-List {
+        &-Item {
+            word-break: break-word;
+        }
+    }
+}

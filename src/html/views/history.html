@@ -1,0 +1,105 @@
+<% var data = { title: "Второй заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<div class="Container">
+	<div class="SubHeader">
+		<span class="SuHeader-Item">arcadia</span>
+	</div>
+	<div class="Title">
+		<div class="Title-Main Text_h1">
+			ya.make
+			<div class="Dropdown">
+				<div
+					class="Dropdown-Header Dropdown-Header_color_mute Text Text_h4 Text_color_mute"
+				>
+					<span>trunk</span>
+				</div>
+			</div>
+		</div>
+		<div class="Title-Sub Text_p">
+			Last commit <span class="Text Text-Link">c4d248</span> on
+			<span class="Text Text-Link">20 Oct 2017, 12:24</span> by
+			<span class="Text Text_color_accent">r</span>obot-srch-releaser
+		</div>
+	</div>
+	<div class="Tabs">
+		<div class="Tabs-Menu">
+			<div class="Tabs-Menu-Item">Details</div>
+			<div class="Tabs-Menu-Item Tabs-Menu-Item_active">History</div>
+		</div>
+		<div class="Tabs-Content">
+			<div class="History">
+				<div class="History-Section">
+					<div class="History-Title Text Text_color_mute">Today</div>
+					<div class="History-Content">
+						<div class="History-Content-Item">
+							<div class="History-Content-Item-Article">
+								<span class="Text Text_h3">Support new distbuild protocol</span>
+								<span class="Text Text_p"
+									>Не очень качественно написаны некоторые функции. Предлагаю
+									исправить это недоразумение.</span
+								>
+								<span class="Text Text_p"
+									><span class="Text Text-Link">s324e8</span
+									><span class="Text Text_color_mute">
+										by
+										<p class="Text Text_firstLetter_accent">woodcutter</p>
+										, 4 s ago</span
+									></span
+								>
+							</div>
+							<span class="History-Content-Item-Commit Text Text-Link"
+								>s324e8</span
+							>
+							<span class="History-Content-Item-Code Button Button_code"></span>
+						</div>
+						<div class="History-Content-Item">
+							<div class="History-Content-Item-Article">
+								<span class="Text Text_h3">Support new distbuild protocol</span>
+								<span class="Text Text_p"
+									>Не очень качественно написаны некоторые функции. Предлагаю
+									исправить это недоразумение.</span
+								>
+								<span class="Text Text_p"
+									><span class="Text Text-Link">s324e8</span
+									><span class="Text Text_color_mute">
+										by
+										<p class="Text Text_firstLetter_accent">woodcutter</p>
+										, 4 s ago</span
+									></span
+								>
+							</div>
+							<span class="History-Content-Item-Commit Text Text-Link"
+								>s324e8</span
+							>
+							<span class="Button Button_code"></span>
+						</div>
+						<div class="History-Content-Item">
+							<div class="History-Content-Item-Article">
+								<span class="Text Text_h3">Support new distbuild protocol</span>
+								<span class="Text Text_p"
+									>Не очень качественно написаны некоторые функции. Предлагаю
+									исправить это недоразумение.</span
+								>
+								<span class="Text Text_p"
+									><span class="Text Text-Link">s324e8</span
+									><span class="Text Text_color_mute">
+										by
+										<p class="Text Text_firstLetter_accent">woodcutter</p>
+										, 4 s ago</span
+									></span
+								>
+							</div>
+							<span class="History-Content-Item-Commit Text Text-Link"
+								>s324e8</span
+							>
+							<span class="Button Button_code"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

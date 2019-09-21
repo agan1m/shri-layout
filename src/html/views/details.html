@@ -1,0 +1,64 @@
+<% var data = { title: "Второй заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<div class="Container">
+	<div class="SubHeader">
+		<span class="SuHeader-Item">arcadia</span>
+	</div>
+	<div class="Title">
+		<div class="Title-Main Text_h1">
+			ya.make
+			<div class="Dropdown">
+				<div
+					class="Dropdown-Header Dropdown-Header_color_mute Text Text_h4 Text_color_mute"
+				>
+					<span>trunk</span>
+				</div>
+			</div>
+		</div>
+		<div class="Title-Sub Text_p">
+			Last commit <span class="Text Text-Link">c4d248</span> on
+			<span class="Text Text-Link">20 Oct 2017, 12:24</span> by
+			<span class="Text Text_color_accent">r</span>obot-srch-releaser
+		</div>
+	</div>
+	<div class="Tabs">
+		<div class="Tabs-Menu">
+			<div class="Tabs-Menu-Item Tabs-Menu-Item_active">Details</div>
+			<div class="Tabs-Menu-Item">History</div>
+		</div>
+		<div class="Tabs-Content">
+			<div class="Details">
+				<div class="Details-Header">
+					<div class="Details-Header-Left">
+						<span class="Text"
+							>ya.make
+							<span class="Text Text_color_mute">(4 347 bytes)</span></span
+						>
+					</div>
+					<button class="Button Button_download Details-Header_hide"></button>
+				</div>
+				<div class="Details-Content">
+					<ol class="Details-List">
+						<li class="Details-List-Item">#!/usr/bin/env python</li>
+						<li class="Details-List-Item">
+							<span class="Text Text_h3">import</span> os
+						</li>
+						<li class="Details-List-Item">
+							<span class="Text Text_h3">import</span> sys
+						</li>
+						<li class="Details-List-Item">
+							URLS = ['https://proxy.sandbox.yandex-team.ru/453818264',
+							'http://storage-int.mds.yandex.net/get-sandbox/110738/by_platform.json.453815347']
+						</li>
+						<li class="Details-List-Item">
+							MD5 = '7f5a85f9c28d35c3a76d8cea7af51106'
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

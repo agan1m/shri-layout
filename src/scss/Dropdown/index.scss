@@ -1,0 +1,23 @@
+.Dropdown {
+
+    &-Header {
+        position: relative;
+        &::after {
+            content: '';
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            right: -14px;
+            top: calc(50% - 5px);
+            border-bottom: 2px solid #000;
+            border-right: 2px solid #000;
+            transform: rotate(45deg);
+        }
+
+        &_color_mute {
+            &::after {
+                border-color: #7F8285;
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.ReposTable {
+	&-Row {
+		display: flex;
+		padding: 16px 8px;
+		justify-content: space-between;
+		border-bottom: 1px solid #e5e5e5;
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+	&-Col {
+		box-sizing: border-box;
+		overflow: hidden;
+		&_name {
+			width: 242px;
+		}
+		&_lastCommit {
+			width: 258px;
+		}
+		&_message {
+			width: 476px;
+		}
+		&_commiter {
+			width: 285px;
+		}
+		&_updated {
+			text-align: right;
+		}
+		&_folder {
+			background-image: url('../img/folder.svg');
+			background-repeat: no-repeat;
+			padding-left: 18px;
+			background-position: left center;
+		}
+		&_file {
+			background-image: url('../img/file.svg');
+			background-repeat: no-repeat;
+			padding-left: 18px;
+			background-position: left center;
+		}
+		&_branch {
+			background-image: url('../img/branch.svg');
+			background-repeat: no-repeat;
+			padding-left: 18px;
+			background-position: left center;
+		}
+		&_align_right {
+			text-align: right;
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.ReposTable {
+        &-Row {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            position: relative;
+            &::before {
+                content: '';
+                width: 16px;
+                height: 16px;
+                border-left: 2px solid #E5E5E5;
+                border-top: 2px solid #E5E5E5;
+                position: absolute;
+                right: 6px;
+                top: calc(50% - 8px);
+                transform: rotate(130deg);
+            }
+        }
+		&-Col {
+
+            margin-bottom: 7px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &_name {
+                width: 100%;
+            }
+
+            &_lastCommit {
+                width: 20%;
+                order: 1;
+            }
+            
+            &_message {
+                width: 100%;
+                order: 0;
+            }
+
+            &_commiter {
+                width: auto;
+                order: 2
+            }
+
+            &_updated {
+                text-align: left;
+                order: 3;
+            }
+		}
+	}
+}
+
+@import './Header.scss';
+@import './Body.scss';

@@ -1,0 +1,32 @@
+.Details-List {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "PT Mono", "Hmonospace", sans-serif;
+    counter-reset: section;
+    &-Item {
+        padding: 7px 7px 7px 71px;
+        position: relative;
+        color: #00234b;
+        font-size: 12px;
+        line-height: 20px;
+        &::before {
+            counter-increment: section;
+            content: counter(section);
+            position: absolute;
+            left: 35px;
+            top: 7px;
+
+            color: #999999;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .Details-List {
+        &-Item {
+            word-break: break-word;
+        }
+    }
+}

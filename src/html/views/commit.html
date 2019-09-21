@@ -1,0 +1,58 @@
+<% var data = { title: "Второй заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<div class="Container">
+	<div class="Title Title_withBtn ">
+		<div class="Title-Main Text_h1">
+				DEVTOOLS-4599: Add option to add extra whitespace between projects
+			<button class="Button Button_burger Title-Main_align_right">Show files at r4318347</button>
+			<span class="Title-Main-Back">Back</span>
+		</div>
+		<div class="Title-Sub Text_p">
+			Last commit <span class="Text Text-Link">c4d248</span> on
+			<span class="Text Text-Link">20 Oct 2017, 12:24</span> by
+			<span class="Text Text_color_accent">r</span>obot-srch-releaser
+		</div>
+	</div>
+	<div class="Commit">
+		<div class="Commit-Header">
+			<div class="Commit-Header-Left">
+				<span class="Text">/trunk/arcadia/devtools/intellij/src/main/java/ru/yandex/devtools/intellij/arc/client/ArcCli.java</span>
+			</div>
+			<div class="Commit-Header-Right">
+				<span class="Text Text_h3 Text_color_success">+100</span>
+				<span class="Text Text_h3 Text_color_accent">-81</span>
+			</div>
+		</div>
+		<div class="Commit-Content">
+			<div class="Commit-Content-Line">
+				<span class="Text Text_color_grey">@@ -270, 160 +270, 161 @@</span
+				><span class="Commit-Content-Line_below">Below 20 lines</span
+				><span class="Commit-Content-Line_above">Above 20 lines</span>
+			</div>
+			<ol class="Commit-List">
+				<li class="Commit-List-Item">#!/usr/bin/env python</li>
+				<li class="Commit-List-Item Commit-List-Item_plus">
+					<span class="Text Text_h3">import</span> os
+				</li>
+				<li class="Commit-List-Item Commit-List-Item_minus">
+					<span class="Text Text_h3">import</span> sys
+				</li>
+				<li class="Commit-List-Item">
+					URLS = ['https://proxy.sandbox.yandex-team.ru/453818264',
+					'http://storage-int.mds.yandex.net/get-sandbox/110738/by_platform.json.453815347']
+				</li>
+				<li class="Commit-List-Item">
+					MD5 = '7f5a85f9c28d35c3a76d8cea7af51106'
+				</li>
+			</ol>
+			<div class="Commit-Content-Line">
+				<span class="Text Text_color_grey">@@ -270, 160 +270, 161 @@</span
+				><span class="Commit-Content-Line_below">Below 20 lines</span
+				><span class="Commit-Content-Line_above">Above 20 lines</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

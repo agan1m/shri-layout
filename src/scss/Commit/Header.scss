@@ -1,0 +1,44 @@
+.Commit-Header {
+	background-color: #f5f5f5;
+	padding: 8px 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&-Left {
+		padding: 2px 0;
+		padding-left: 20px;
+		background-image: url('../img/file.svg');
+		background-repeat: no-repeat;
+		background-position: left center;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	&-Right {
+		padding: 2px 0;
+		padding-right: 25px;
+		background-image: url('../img/Clone.svg');
+		background-repeat: no-repeat;
+		background-position: right center;
+
+		display: flex;
+		justify-content: space-between;
+		width: 70px;
+	}
+}
+
+@media (max-width: 360px) {
+	.Commit-Header {
+		flex-direction: column;
+        align-items: flex-start;
+		&-Left {
+            width: 100%;
+        }
+        &-Right {
+            width: 90%;
+            justify-content: flex-start;
+        }
+	}
+}

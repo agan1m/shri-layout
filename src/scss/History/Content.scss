@@ -1,0 +1,56 @@
+.History-Content-Item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 52px;
+    position: relative;
+    padding-bottom: 16px;
+
+    &::before {
+        content: '';
+        background-color: #EBF6FD;
+        background-image: url('../img/ic_change.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    &::after {
+        content: '';
+        width: 2px;
+        background-color: #B8BEC3;
+        border-radius: 10px;
+        position: absolute;
+        left: 19px;
+        top: 41px;
+        height: calc(100% - 42px);
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+        &::after {
+            display: none;
+        }
+    }
+
+    &-Article {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px) {
+    .History-Content-Item {
+        &-Article {
+            width: 86%;
+        }
+
+        &-Commit {
+            display: none;
+        }
+    }
+}
